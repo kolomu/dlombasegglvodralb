@@ -1,41 +1,5 @@
-
-
-<div class="flex flex-wrap">
-  <div class="w-full">
-    <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-slate-500">
-      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-        <div class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
-          <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#pablo">
-            Starter Menu
-          </a>
-          <button class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" (click)="toggleNavbar()">
-            <fa-icon [icon]="faCoffee"></fa-icon>
-          </button>
-        </div>
-        <div [ngClass]="{'hidden': !menuShow, 'flex': menuShow}" class="lg:flex lg:flex-grow items-center">
-          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li class="nav-item">
-              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-                Discover
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-                Profile
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-                Settings
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-</div>
-
+<!-- The App Component is the layout component -->
+<app-navbar></app-navbar>
 
 <h1 class="text-3xl font-bold underline">
   Hello world!
@@ -47,8 +11,12 @@
 </div>
 
 <div class="md:container md:mx-auto">
-  <p style="background-color: olive;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere id hic corrupti nesciunt sint est numquam mollitia, deserunt adipisci dolore eius a iusto nam nihil tempora quam. Saepe, in dignissimos.
-  Consequatur labore perferendis hic ex, voluptate totam quam sint repudiandae iste pariatur doloribus placeat cupiditate expedita cum eius ipsum magnam est aperiam, sit necessitatibus unde quasi doloremque minima? Illum, inventore!</p>
+  <p style="background-color: olive;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Facere id hic corrupti nesciunt sint est numquam mollitia, deserunt adipisci dolore eius a iusto
+     nam nihil tempora quam. Saepe, in dignissimos.
+  Consequatur labore perferendis hic ex, voluptate totam quam sint repudiandae iste pariatur doloribus 
+  placeat cupiditate expedita cum eius ipsum magnam est aperiam, sit necessitatibus unde quasi doloremque
+   minima? Illum, inventore!</p>
 </div>
 
 

@@ -1,0 +1,30 @@
+<div class="flex flex-wrap">
+    <div class="w-full">
+      <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-slate-500">
+        
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div class="w-full relative flex justify-between md:w-auto px-4 md:static md:block md:justify-start">
+            <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#pablo">
+              {{title}}
+            </a>
+            <button class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none" type="button" (click)="toggleNavbar()">
+              <fa-icon [icon]="faNavicon"></fa-icon>
+            </button>
+          </div>
+  
+          <div [ngClass]="{'hidden': !menuShow, 'flex': menuShow}" class="md:flex md:flex-grow items-center">
+            <ul class="flex flex-col md:flex-row list-none md:ml-auto">
+
+              <li class="nav-item" *ngFor="let navItem of navItems">
+                <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="{{navItem.link}}">
+                  {{navItem.label}}
+                </a>
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+  
+      </nav>
+    </div>
+  </div>

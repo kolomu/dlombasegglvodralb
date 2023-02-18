@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +7,4 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'dlombasegglvodralb';
-
-  faCoffee = faCoffee;
-
-  menuShow = false;
-  toggleNavbar(){
-    this.menuShow = !this.menuShow;
-  }
-
 }
