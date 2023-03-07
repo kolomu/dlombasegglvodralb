@@ -8,13 +8,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NavbarComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
