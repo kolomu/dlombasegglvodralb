@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faNavicon } from '@fortawesome/free-solid-svg-icons';
 
@@ -8,23 +9,22 @@ import { faNavicon } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
   standalone: true,
-  imports: [CommonModule, FontAwesomeModule]
+  imports: [CommonModule, FontAwesomeModule, RouterModule]
 
 })
 export class NavbarComponent {
   faNavicon = faNavicon;
-
+  menuShow = false;
   title = "D'Lombaseggl vo dr Alb";
 
   navItems = [
-    {label: "Home", link: '#'},
-    {label: "Anmeldung Event", link: 'register-for-event'},
-    {label: "Über den Verein", link: 'verein'},
-    {label: "Kontakt", link: 'kontakt'}
-];
+    { label: "Home", link: '' },
+    { label: "Anmeldung Event", link: 'register-for-event' },
+    { label: "Über den Verein", link: 'verein' },
+    { label: "Kontakt", link: 'kontakt' }
+  ];
 
-  menuShow = false;
-  toggleNavbar(){
+  toggleNavbar() {
     this.menuShow = !this.menuShow;
   }
 
